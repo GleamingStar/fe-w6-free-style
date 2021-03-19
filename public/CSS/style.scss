@@ -1,12 +1,16 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 .unseen {
 	display: none;
 }
-button{
+*{
+	font-family: "Noto Sans KR", sans-serif;
+}
+button {
 	background-color: rgba($color: black, $alpha: 0.07);
 	border-radius: 5px;
 	border: 1px solid black;
 }
-input{
+input {
 	border-radius: 3px;
 	border: 1px solid black;
 }
@@ -40,12 +44,12 @@ input{
 	}
 	align-items: center;
 }
-.roulette__folder{
+.roulette__folder {
 	position: relative;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	top:10px;
-	left:151px;
+	top: 10px;
+	left: 151px;
 }
 .roulette {
 	position: relative;
@@ -84,66 +88,73 @@ input{
 }
 .result {
 	position: absolute;
-	width: 700px;
-	height: 565px;
+	width: 986px;
+	height: 581px;
 	margin-right: 1rem;
 	left: 340px;
 	top: 16px;
 	border: 1px solid black;
-	// background-image: url("../images/result_backgorund.png");
+	background-image: url("../images/background4.png");
 	ul {
 		position: absolute;
-		height: 525px;
+		height: 380px;
 		width: 200px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-between;
+		// justify-content: space-between;
 	}
 	&__team-blue {
-		top: 20px;
-		left: 20px;
+		top: 120px;
+		left: 127px;
 		li {
-			border: 1px solid blue;
+			border: 1px solid transparent;
 			.slide-item {
 				position: relative;
-				left: -200px;
+				left: -190px;
+				align-items: flex-start;
 			}
 		}
 	}
 	&__team-red {
-		top: 20px;
-		left: 480px;
+		top: 120px;
+		left: 662px;
 		li {
-			border: 1px solid red;
+			border: 1px solid transparent;
 			.slide-item {
 				position: relative;
-				left: 200px;
+				left: 190px;
+				align-items: flex-end;
 			}
 		}
 	}
 	li {
-		margin-top: 8px;
-		margin-bottom: 8px;
-		height: 89px;
+		// margin-top: 8px;
+		// margin-bottom: 8px;
+		height: 64px;
 		width: 200px;
 		overflow: hidden;
+		color: white;
 		.slide-item {
-			height: 89px;
+			height: 66px;
 			display: flex;
-			font-size: 150%;
+			font-size: 130%;
+			// font-family: "Noto Sans KR", sans-serif;
 			justify-content: space-evenly;
 			flex-direction: column;
-			align-items: center;
-			div{
+			// align-items: center;
+			div {
 				display: flex;
 				align-items: center;
-				img{
+				img {
 					margin-right: 10px;
-					height: 38px;
+					height: 28px;
 				}
 			}
 		}
+	}
+	li:nth-child(4) {
+		margin-top: 20px;
 	}
 }
 
