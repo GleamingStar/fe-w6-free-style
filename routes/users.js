@@ -2,7 +2,7 @@ var express = require("express");
 var router = express.Router();
 var axios = require("axios");
 
-const APIKey = "RGAPI-d26dfd0a-ceb9-402f-a662-5dfda6649ea4";
+const APIKey = "RGAPI-4cd14921-8b87-49ba-8674-83407a23ec33";
 /* GET users information. */
 router.get("/", function (req, res, next) {
 	const userID = req.query.userID;
